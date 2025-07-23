@@ -3,6 +3,7 @@ import dotenv from 'dotenv';
 import sequelize from './config/connection.js';
 import tableCreation from './config/tableCreation.js';
 import routes from './routes/userRoutes.js';
+import accRoutes from './routes/accountRoutes.js'
 
 
 const app = express();
@@ -11,6 +12,7 @@ dotenv.config();
 
 
 app.use('/user',routes);
+app.use('/acc', accRoutes);
 
 app.get("/", (req,res)=>{
     res.send("<h1>hello</h1>")

@@ -18,12 +18,31 @@ const Account = connectionStr.define('Account',{
     },
     ifsc : {
         type : DataTypes.INTEGER,
-        unique : true,
         allowNull : false
     },
     balance : {
         type : DataTypes.INTEGER,
         allowNull : true
+    },
+    cardNumber: {
+        type: DataTypes.STRING,
+        allowNull: true
+    },
+    cardType: {
+        type: DataTypes.STRING,
+        allowNull: true
+    },
+    creditLimit: {
+        type: DataTypes.INTEGER,
+        allowNull: true
+    },
+    availableCredit: {
+        type: DataTypes.INTEGER,
+        allowNull: true
+    },
+    dueDate: {
+        type: DataTypes.DATE,
+        allowNull: true
     }
 });
 
