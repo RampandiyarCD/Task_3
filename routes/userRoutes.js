@@ -1,4 +1,4 @@
-import { createUser, deleteUser, getUser, getUserById, updateUser } from "../controller/userController.js";
+import { createUser, deleteUser, getUser, getUserById, login, updateUser } from "../controller/userController.js";
 import { Router } from 'express';
 
 const routes = new Router();
@@ -9,5 +9,8 @@ routes.get('/', getUser);
 routes.get('/:userId', getUserById);
 routes.put('/:userId', updateUser);
 routes.delete('/:userId', deleteUser)
+
+//loginroute
+routes.post('/login',login)
 
 export default routes;

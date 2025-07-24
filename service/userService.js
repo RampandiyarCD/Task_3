@@ -1,8 +1,12 @@
 import { Op } from "sequelize";
 import User from "../model/user.js";
+import bcrypt from 'bcrypt';
+
+const saltRound = 15
 
 export const userCreateService = async (userData) => {
     try {
+        const hashing = await bcrypt.hash(userData.password, saltRound);
         const [user, created] = await User.findOrCreate({
             where: {
                 [Op.or]: [
@@ -10,7 +14,10 @@ export const userCreateService = async (userData) => {
                     { phone: userData.phone }
                 ]
             },
-            defaults: userData
+            defaults: {
+                ...userData,
+                password: hashing
+            }
         });
 
         if (!created) {
@@ -72,3 +79,25 @@ export const userDeleteService = async (userId) => {
         return { error: "An unexpected error occurred" };
     }
 };   
+
+export const loginService = async(userId, password) => {
+    try {
+        const user = await User.findOne({
+            where :{userId}
+        });
+
+        if(!user){
+            return {error: "User does not Exists"}
+        }
+
+        const isPassword = await bcrypt.compare(password, user.password)
+
+        if(!isPassword){
+            return {error : "Invalid Password"}
+        }
+
+        return{user};
+    } catch (error) {
+        return { error: "An unexpected error occurred" };
+    }
+}

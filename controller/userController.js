@@ -1,4 +1,4 @@
-import { userCreateService, userDeleteService, userGetByIdService, userGetService, userUpdateService } from "../service/userService.js";
+import { loginService, userCreateService, userDeleteService, userGetByIdService, userGetService, userUpdateService } from "../service/userService.js";
 
 export const createUser = async (req, res) => {
     try {
@@ -67,3 +67,16 @@ export const deleteUser = async (req, res) => {
         return res.status(500).json({ error: "Internal Server Error" });
     }
 };   
+
+export const login = async(req, res) => {
+    try {
+        const loginData = await loginService(req.body.userId, req.body.password);
+        if(loginData?.error){
+            return res.status(404).json({error : loginData.error})
+        }
+        return res.status(200).json({message:"Login Successfully",user:loginData.user})
+
+    } catch (error) {
+        return res.status(500).json({ error: "Internal Server Error" });
+    }
+}
