@@ -7,7 +7,7 @@ export const createAccount = async(req, res) => {
         if(accData?.error){
             return res.status(404).json({error: accData.error});
         }
-        return res.status(200).json({account: accData});
+        return res.status(200).json(accData);
     } catch (error) {
         return res.status(500).json({ error: "Internal Server Error" });
     }
@@ -20,7 +20,7 @@ export const getAccount = async(req, res) => {
         if(accData?.error){
             return res.status(404).json({error: accData.error});
         }
-        return res.status(200).json({accounts: accData});
+        return res.status(200).json(accData);
     } catch (error) {
         return res.status(500).json({ error: "Internal Server Error" });
     }
@@ -33,7 +33,7 @@ export const getAccountById = async(req, res) => {
         if(accID?.error){
             return res.status(404).json({error: accID.error});
         }
-        return res.status(200).json({account: accID});
+        return res.status(200).json(accID);
     } catch (error) {
         return res.status(500).json({ error: "Internal Server Error" });
     }
@@ -46,7 +46,7 @@ export const updateAccount = async(req, res) => {
         if(accID?.error){
             return res.status(404).json({error: accID.error});
         }
-        return res.status(200).json({account: accID});
+        return res.status(200).json(accID);
     } catch (error) {
         return res.status(500).json({ error: "Internal Server Error" });
     }
