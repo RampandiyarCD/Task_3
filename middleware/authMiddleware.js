@@ -3,7 +3,7 @@ import dotenv from "dotenv";
 
 dotenv.config();
 
-export const genrateToken = async (user) => {
+export const generateToken = async (user) => {
   try {
     const accessToken = jwt.sign(
       { userID: user.userId },

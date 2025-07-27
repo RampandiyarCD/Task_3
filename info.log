@@ -1,0 +1,418 @@
+{
+  service: 'user-service',
+  userData: User {
+    dataValues: {
+      userId: 'CD003',
+      name: 'RampandiyarCD',
+      password: '$2b$15$4qK12uoxogC79J8Pm85C5.vSF4hA91ZWSIQ9O5qoetHc0onyCZDwi',
+      email: 'rampandiyar@gmail.com',
+      address: '27-kv,anb,thiru',
+      phone: '6380046373'
+    },
+    _previousDataValues: {
+      userId: 'CD003',
+      name: 'RampandiyarCD',
+      password: '$2b$15$4qK12uoxogC79J8Pm85C5.vSF4hA91ZWSIQ9O5qoetHc0onyCZDwi',
+      email: 'rampandiyar@gmail.com',
+      address: '27-kv,anb,thiru',
+      phone: '6380046373'
+    },
+    uniqno: 1,
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: true,
+      _schema: null,
+      _schemaDelimiter: '',
+      attributes: undefined,
+      include: undefined,
+      raw: undefined,
+      silent: undefined
+    },
+    isNewRecord: false
+  },
+  level: 'info',
+  message: 'User Created Successfully',
+  timestamp: '2025-07-25T05:09:02.105Z'
+}
+{
+  service: 'user-service',
+  userData: User {
+    dataValues: {
+      userId: 'CD003',
+      name: 'RampandiyarCD',
+      password: '$2b$15$aX47ltC66XxzmHl0zSd5kOik2/i5YOJiaDn.JqCPL4r1Q7AuKEwuG',
+      email: 'rampandiyar@gmail.com',
+      address: '27-kv,anb,thiru',
+      phone: '6380046373'
+    },
+    _previousDataValues: {
+      userId: 'CD003',
+      name: 'RampandiyarCD',
+      password: '$2b$15$aX47ltC66XxzmHl0zSd5kOik2/i5YOJiaDn.JqCPL4r1Q7AuKEwuG',
+      email: 'rampandiyar@gmail.com',
+      address: '27-kv,anb,thiru',
+      phone: '6380046373'
+    },
+    uniqno: 1,
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: true,
+      _schema: null,
+      _schemaDelimiter: '',
+      attributes: undefined,
+      include: undefined,
+      raw: undefined,
+      silent: undefined
+    },
+    isNewRecord: false
+  },
+  level: 'info',
+  message: 'User Created Successfully',
+  timestamp: '2025-07-25T05:09:26.575Z'
+}
+{
+  service: 'user-service',
+  userData: User {
+    dataValues: {
+      userId: 'CD004',
+      name: 'RampandiyarCD',
+      password: '$2b$15$hO/ySJm6wwIHK1.LP33aq.3VyaQGcTsecAOujKMWYZAk9hSQx5UGm',
+      email: 'rampandiyar@gmail.com',
+      address: '27-kv,anb,thiru',
+      phone: '6380046374'
+    },
+    _previousDataValues: {
+      userId: 'CD004',
+      name: 'RampandiyarCD',
+      password: '$2b$15$hO/ySJm6wwIHK1.LP33aq.3VyaQGcTsecAOujKMWYZAk9hSQx5UGm',
+      email: 'rampandiyar@gmail.com',
+      address: '27-kv,anb,thiru',
+      phone: '6380046374'
+    },
+    uniqno: 1,
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: true,
+      _schema: null,
+      _schemaDelimiter: '',
+      attributes: undefined,
+      include: undefined,
+      raw: undefined,
+      silent: undefined
+    },
+    isNewRecord: false
+  },
+  level: 'info',
+  message: 'User Created Successfully',
+  timestamp: '2025-07-25T05:14:38.825Z'
+}
+{
+  service: 'user-service',
+  loginData: User {
+    dataValues: {
+      userId: 'CD001',
+      name: 'RampandiyarCD',
+      password: '$2b$15$vGZXlZFWZO27zMYRw9lFROa8W8A.eozOeuJ31Znwq.Qux4gJb6iEm',
+      email: 'rampandiyar@gmail.com',
+      address: '27-kv,anb,thiru',
+      phone: '6380046371'
+    },
+    _previousDataValues: {
+      userId: 'CD001',
+      name: 'RampandiyarCD',
+      password: '$2b$15$vGZXlZFWZO27zMYRw9lFROa8W8A.eozOeuJ31Znwq.Qux4gJb6iEm',
+      email: 'rampandiyar@gmail.com',
+      address: '27-kv,anb,thiru',
+      phone: '6380046371'
+    },
+    uniqno: 1,
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: false,
+      _schema: null,
+      _schemaDelimiter: '',
+      raw: true,
+      attributes: [ 'userId', 'name', 'password', 'email', 'address', 'phone' ]
+    },
+    isNewRecord: false
+  },
+  level: 'info',
+  message: 'Login successful',
+  timestamp: '2025-07-25T08:12:28.225Z'
+}
+{
+  service: 'user-service',
+  users: [
+    User {
+      dataValues: {
+        userId: 'CD001',
+        name: 'RampandiyarCD',
+        password: '$2b$15$vGZXlZFWZO27zMYRw9lFROa8W8A.eozOeuJ31Znwq.Qux4gJb6iEm',
+        email: 'rampandiyar@gmail.com',
+        address: '27-kv,anb,thiru',
+        phone: '6380046371'
+      },
+      _previousDataValues: {
+        userId: 'CD001',
+        name: 'RampandiyarCD',
+        password: '$2b$15$vGZXlZFWZO27zMYRw9lFROa8W8A.eozOeuJ31Znwq.Qux4gJb6iEm',
+        email: 'rampandiyar@gmail.com',
+        address: '27-kv,anb,thiru',
+        phone: '6380046371'
+      },
+      uniqno: 1,
+      _changed: Set(0) {},
+      _options: {
+        isNewRecord: false,
+        _schema: null,
+        _schemaDelimiter: '',
+        raw: true,
+        attributes: [ 'userId', 'name', 'password', 'email', 'address', 'phone' ]
+      },
+      isNewRecord: false
+    },
+    User {
+      dataValues: {
+        userId: 'CD002',
+        name: 'RampandiyarCD',
+        password: '$2b$15$Tnr5ROygFAptDz7PS/i.EeIOPqhDXeRrl8Iu3NO6aMAeWCHGDjy62',
+        email: 'rampandiyar@gmail.com',
+        address: '27-kv,anb,thiru',
+        phone: '6380046372'
+      },
+      _previousDataValues: {
+        userId: 'CD002',
+        name: 'RampandiyarCD',
+        password: '$2b$15$Tnr5ROygFAptDz7PS/i.EeIOPqhDXeRrl8Iu3NO6aMAeWCHGDjy62',
+        email: 'rampandiyar@gmail.com',
+        address: '27-kv,anb,thiru',
+        phone: '6380046372'
+      },
+      uniqno: 1,
+      _changed: Set(0) {},
+      _options: {
+        isNewRecord: false,
+        _schema: null,
+        _schemaDelimiter: '',
+        raw: true,
+        attributes: [ 'userId', 'name', 'password', 'email', 'address', 'phone' ]
+      },
+      isNewRecord: false
+    },
+    User {
+      dataValues: {
+        userId: 'CD003',
+        name: 'RampandiyarCD',
+        password: '$2b$15$aX47ltC66XxzmHl0zSd5kOik2/i5YOJiaDn.JqCPL4r1Q7AuKEwuG',
+        email: 'rampandiyar@gmail.com',
+        address: '27-kv,anb,thiru',
+        phone: '6380046373'
+      },
+      _previousDataValues: {
+        userId: 'CD003',
+        name: 'RampandiyarCD',
+        password: '$2b$15$aX47ltC66XxzmHl0zSd5kOik2/i5YOJiaDn.JqCPL4r1Q7AuKEwuG',
+        email: 'rampandiyar@gmail.com',
+        address: '27-kv,anb,thiru',
+        phone: '6380046373'
+      },
+      uniqno: 1,
+      _changed: Set(0) {},
+      _options: {
+        isNewRecord: false,
+        _schema: null,
+        _schemaDelimiter: '',
+        raw: true,
+        attributes: [ 'userId', 'name', 'password', 'email', 'address', 'phone' ]
+      },
+      isNewRecord: false
+    },
+    User {
+      dataValues: {
+        userId: 'CD004',
+        name: 'RampandiyarCD',
+        password: '$2b$15$hO/ySJm6wwIHK1.LP33aq.3VyaQGcTsecAOujKMWYZAk9hSQx5UGm',
+        email: 'rampandiyar@gmail.com',
+        address: '27-kv,anb,thiru',
+        phone: '6380046374'
+      },
+      _previousDataValues: {
+        userId: 'CD004',
+        name: 'RampandiyarCD',
+        password: '$2b$15$hO/ySJm6wwIHK1.LP33aq.3VyaQGcTsecAOujKMWYZAk9hSQx5UGm',
+        email: 'rampandiyar@gmail.com',
+        address: '27-kv,anb,thiru',
+        phone: '6380046374'
+      },
+      uniqno: 1,
+      _changed: Set(0) {},
+      _options: {
+        isNewRecord: false,
+        _schema: null,
+        _schemaDelimiter: '',
+        raw: true,
+        attributes: [ 'userId', 'name', 'password', 'email', 'address', 'phone' ]
+      },
+      isNewRecord: false
+    }
+  ],
+  level: 'info',
+  message: 'Users retrieved successfully',
+  timestamp: '2025-07-25T08:18:39.714Z'
+}
+{
+  service: 'user-service',
+  users: [
+    User {
+      dataValues: {
+        userId: 'CD001',
+        name: 'RampandiyarCD',
+        password: '$2b$15$vGZXlZFWZO27zMYRw9lFROa8W8A.eozOeuJ31Znwq.Qux4gJb6iEm',
+        email: 'rampandiyar@gmail.com',
+        address: '27-kv,anb,thiru',
+        phone: '6380046371'
+      },
+      _previousDataValues: {
+        userId: 'CD001',
+        name: 'RampandiyarCD',
+        password: '$2b$15$vGZXlZFWZO27zMYRw9lFROa8W8A.eozOeuJ31Znwq.Qux4gJb6iEm',
+        email: 'rampandiyar@gmail.com',
+        address: '27-kv,anb,thiru',
+        phone: '6380046371'
+      },
+      uniqno: 1,
+      _changed: Set(0) {},
+      _options: {
+        isNewRecord: false,
+        _schema: null,
+        _schemaDelimiter: '',
+        raw: true,
+        attributes: [ 'userId', 'name', 'password', 'email', 'address', 'phone' ]
+      },
+      isNewRecord: false
+    },
+    User {
+      dataValues: {
+        userId: 'CD002',
+        name: 'RampandiyarCD',
+        password: '$2b$15$Tnr5ROygFAptDz7PS/i.EeIOPqhDXeRrl8Iu3NO6aMAeWCHGDjy62',
+        email: 'rampandiyar@gmail.com',
+        address: '27-kv,anb,thiru',
+        phone: '6380046372'
+      },
+      _previousDataValues: {
+        userId: 'CD002',
+        name: 'RampandiyarCD',
+        password: '$2b$15$Tnr5ROygFAptDz7PS/i.EeIOPqhDXeRrl8Iu3NO6aMAeWCHGDjy62',
+        email: 'rampandiyar@gmail.com',
+        address: '27-kv,anb,thiru',
+        phone: '6380046372'
+      },
+      uniqno: 1,
+      _changed: Set(0) {},
+      _options: {
+        isNewRecord: false,
+        _schema: null,
+        _schemaDelimiter: '',
+        raw: true,
+        attributes: [ 'userId', 'name', 'password', 'email', 'address', 'phone' ]
+      },
+      isNewRecord: false
+    },
+    User {
+      dataValues: {
+        userId: 'CD003',
+        name: 'RampandiyarCD',
+        password: '$2b$15$aX47ltC66XxzmHl0zSd5kOik2/i5YOJiaDn.JqCPL4r1Q7AuKEwuG',
+        email: 'rampandiyar@gmail.com',
+        address: '27-kv,anb,thiru',
+        phone: '6380046373'
+      },
+      _previousDataValues: {
+        userId: 'CD003',
+        name: 'RampandiyarCD',
+        password: '$2b$15$aX47ltC66XxzmHl0zSd5kOik2/i5YOJiaDn.JqCPL4r1Q7AuKEwuG',
+        email: 'rampandiyar@gmail.com',
+        address: '27-kv,anb,thiru',
+        phone: '6380046373'
+      },
+      uniqno: 1,
+      _changed: Set(0) {},
+      _options: {
+        isNewRecord: false,
+        _schema: null,
+        _schemaDelimiter: '',
+        raw: true,
+        attributes: [ 'userId', 'name', 'password', 'email', 'address', 'phone' ]
+      },
+      isNewRecord: false
+    },
+    User {
+      dataValues: {
+        userId: 'CD004',
+        name: 'RampandiyarCD',
+        password: '$2b$15$hO/ySJm6wwIHK1.LP33aq.3VyaQGcTsecAOujKMWYZAk9hSQx5UGm',
+        email: 'rampandiyar@gmail.com',
+        address: '27-kv,anb,thiru',
+        phone: '6380046374'
+      },
+      _previousDataValues: {
+        userId: 'CD004',
+        name: 'RampandiyarCD',
+        password: '$2b$15$hO/ySJm6wwIHK1.LP33aq.3VyaQGcTsecAOujKMWYZAk9hSQx5UGm',
+        email: 'rampandiyar@gmail.com',
+        address: '27-kv,anb,thiru',
+        phone: '6380046374'
+      },
+      uniqno: 1,
+      _changed: Set(0) {},
+      _options: {
+        isNewRecord: false,
+        _schema: null,
+        _schemaDelimiter: '',
+        raw: true,
+        attributes: [ 'userId', 'name', 'password', 'email', 'address', 'phone' ]
+      },
+      isNewRecord: false
+    }
+  ],
+  level: 'info',
+  message: 'Users retrieved successfully',
+  timestamp: '2025-07-25T08:18:56.840Z'
+}
+{
+  service: 'user-service',
+  userData: User {
+    dataValues: {
+      userId: 'CD005',
+      name: 'RampandiyarCD',
+      password: '$2b$15$ubib7keQRrKdxOFUExweOeZqDklMmZUtE14ELCB/GdveWxIvq/t2y',
+      email: 'rampandiyar@gmail.com',
+      address: '27-kv,anb,thiru',
+      phone: '6380046375'
+    },
+    _previousDataValues: {
+      userId: 'CD005',
+      name: 'RampandiyarCD',
+      password: '$2b$15$ubib7keQRrKdxOFUExweOeZqDklMmZUtE14ELCB/GdveWxIvq/t2y',
+      email: 'rampandiyar@gmail.com',
+      address: '27-kv,anb,thiru',
+      phone: '6380046375'
+    },
+    uniqno: 1,
+    _changed: Set(0) {},
+    _options: {
+      isNewRecord: true,
+      _schema: null,
+      _schemaDelimiter: '',
+      attributes: undefined,
+      include: undefined,
+      raw: undefined,
+      silent: undefined
+    },
+    isNewRecord: false
+  },
+  level: 'info',
+  message: 'User Created Successfully',
+  timestamp: '2025-07-25T08:26:37.577Z'
+}

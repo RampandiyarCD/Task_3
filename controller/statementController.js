@@ -12,7 +12,7 @@ export const createStatement = async (req, res) => {
     if (statement?.error) {
       return res.status(404).json({ error: statement.error });
     }
-    return res.status(201).json(statement);
+    return res.status(201).json({statement});
   } catch (error) {
     return res.status(500).json({ error: "Internal Server Error" });
   }
@@ -24,7 +24,7 @@ export const getStatements = async (req, res) => {
     if (statement?.error) {
       return res.status(404).json({ error: statement.error });
     }
-    return res.status(200).json(statement);
+    return res.status(200).json({statement});
   } catch (error) {
     return res.status(500).json({ error: "Internal Server Error" });
   }
@@ -36,7 +36,7 @@ export const getStatementById = async (req, res) => {
     if (statement?.error) {
       return res.status(404).json({ error: statement.error });
     }
-    return res.status(200).json(statement);
+    return res.status(200).json({statement});
   } catch (error) {
     return res.status(500).json({ error: "Internal Server Error" });
   }
@@ -48,7 +48,7 @@ export const updateStatement = async (req, res) => {
     if (statement?.error) {
       return res.status(404).json({ error: statement.error });
     }
-    return res.status(200).json(statement);
+    return res.status(200).json({statement});
   } catch (error) {
     return res.status(500).json({ error: "Internal Server Error" });
   }
@@ -60,7 +60,7 @@ export const deleteStatement = async (req, res) => {
     if (statement?.error) {
       return res.status(404).json({ error: statement.error });
     }
-    return res.status(200).json(statement);
+    return res.status(200).json({statement});
   } catch (error) {
     return res.status(500).json({ error: "Internal Server Error" });
   }
