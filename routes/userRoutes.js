@@ -12,10 +12,10 @@ import { auth } from "../middleware/authMiddleware.js";
 const routes = new Router();
 
 routes.post("/", createUser);
-routes.get("/", getUser);
+routes.get("/", auth, getUser);
 routes.get("/:userId", auth, getUserById);
-routes.put("/:userId", updateUser);
-routes.delete("/:userId", deleteUser);
+routes.put("/:userId", auth, updateUser);
+routes.delete("/:userId", auth, deleteUser);
 
 //loginroute
 routes.post("/login", login);

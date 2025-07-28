@@ -1,5 +1,5 @@
 import Account from "../model/account.js";
-
+import Statement from "../model/statement.js";
 export const createAccountService = async (accData) => {
   try {
     const [acc, created] = await Account.findOrCreate({
@@ -82,10 +82,26 @@ export const transferAccountService = async (accId, accId2, data) => {
     await acc.save();
     await acc2.save();
 
+    const statement1 = await Statement.create({
+      accountId: accId,
+      date: new Date(),
+      description: `Transfer to account ${accId2}`,
+      amount: -amount, 
+      balance: acc.balance,
+    });
+
+    const statement2 = await Statement.create({
+      accountId: accId2,
+      date: new Date(),
+      description: `Transfer from account ${accId}`,
+      amount: amount, 
+      balance: acc2.balance,
+    });
+
+    
     return { acc, acc2 };
   } catch (error) {
     console.error("Transfer Error:", error);
     return { error: "An unexpected error occurred" };
   }
 };
-

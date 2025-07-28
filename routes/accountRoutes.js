@@ -7,15 +7,16 @@ import {
   updateAccount,
 } from "../controller/accountController.js";
 import { Router } from "express";
+import { auth } from "../middleware/authMiddleware.js";
 
 const routes = new Router();
 
-routes.post("/", createAccount);
-routes.get("/", getAccount);
-routes.get("/:accId", getAccountById);
-routes.put("/:accId", updateAccount);
-routes.delete("/:accId", deleteAccount);
+routes.post("/", auth, createAccount);
+routes.get("/", auth, getAccount);
+routes.get("/:accId", auth, getAccountById);
+routes.put("/:accId", auth, updateAccount);
+routes.delete("/:accId", auth, deleteAccount);
 
-routes.put("/:accId/:accId2", tranferAmount);
+routes.put("/:accId/:accId2", auth, tranferAmount);
 
 export default routes;
