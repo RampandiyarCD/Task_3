@@ -36,3 +36,9 @@
   service: 'user-service',
   timestamp: '2025-07-25T08:26:24.782Z'
 }
+{
+  message: { error: 'Invalid Password' },
+  level: 'error',
+  service: 'user-service',
+  timestamp: '2025-07-27T22:18:27.225Z'
+}

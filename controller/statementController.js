@@ -26,7 +26,7 @@ export const createStatement = async (req, res) => {
 
 export const getStatements = async (req, res) => {
   try {
-    const { accountId } = req.params; // assuming accountId is passed via params
+    const { accountId } = req.params; 
     const statement = await getStatementsService(accountId);
 
     if (statement?.error) {
