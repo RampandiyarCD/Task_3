@@ -1,3 +1,5 @@
 .env
 node_modules
 err.log
+combined.log
+info.log
