@@ -1,20 +1,54 @@
 # Task_3
 
-It is a complete Backend Project so have to check with postman
+This project is a backend system for a banking web application, providing CRUD (Create, Read, Update, Delete) operations for Users, Accounts, and Statements. The application follows the MVC (Model-View-Controller) architectural pattern for better code organization and maintainability.
+
+**Prerequisites to set up this project:**
+- Node.js 
+- Express.js 
+- PostgreSQL 
 
 Yarn version: "1.22.22",
 
-Installing all dependencies: yarn or yarn install,
+```shell
+#Install yarn if you haven't yet:
+npm i yarn
 
-To Run the server use: yarn start,
+#Installing all dependencies:
+yarn or yarn install
 
-For creating the tables: Just un Comment the "tablecreation()" function in the index.js,
+#To Run the server use:
+yarn start
+```
 
-Api end Points to check:
+Before running the application, you must create a `.env` file in the project root directory to configure the required environment variables:
 
-For creating a User: "http://localhost:3000/user/"
+```env
+PORT="YOUR_PORT"
+PGUSER="YOUR_PG_USERNAME"
+PGHOST="YOUR_PG_HOST"
+PGDB="YOUR_PG_DB"
+PGPORT="YOUR_PG_PORT(default:5432)"
+PGPASS="YOUR_PG_PASS"
+SECRET_KEY="YOUR_SECRET_KEY"
+```
 
-sample json input
+- Replace the empty values with your actual configuration details.
+- `PORT`: The port number on which the server will run (e.g., 3000).
+- `PGUSER`: PostgreSQL database username.
+- `PGHOST`: PostgreSQL database host (e.g., localhost).
+- `PGDB`: Name of the PostgreSQL database.
+- `PGPORT`: PostgreSQL database port (default is 5432).
+- `PGPASS`: PostgreSQL database password.
+- `SECRET_KEY`: Secret key used for JWT authentication or
+
+**For creating the tables: Just un Comment the "tablecreation()" function in the index.js**,
+
+## Api end Points to check:
+
+#### For creating a User: "http://localhost:3000/user/"
+
+```shell
+#sample json input
 {
 "userId": "CD001",
 "name": "RampandiyarCD",
@@ -24,19 +58,24 @@ sample json input
 "phone": "6380046371"
 }
 
-For login: "http://localhost:3000/user/login"
+```
 
-sample input:
+#### For login: "http://localhost:3000/user/login"
+
+```shell
+#sample json input:
 {
 "userId": "CD001",
 "password": "5332"
 }
+```
 
-After login you will get an Token copy it and paste in the Authorization on Bearer token for further api checkings
+**After login you will get an Token copy it and paste in the Authorization on Bearer token for further api checkings**
 
-For creating a Account: "http://localhost:3000/acc/"
+#### For creating a Account: "http://localhost:3000/acc/"
 
-sample json input
+```shell
+#sample json input
 {
 "accountId": "CUR123456",
 "type": "current",
@@ -54,12 +93,15 @@ sample json input
 "balance": 40000,
 "userId": "CD001"
 }
+```
 
-For transfering amount :"http://localhost:3000/acc/CUR123456/SAV123456"
+#### For transfering amount :"http://localhost:3000/acc/CUR123456/SAV123456"
 
-<!-- us this ids if u use my sample inputs -->
+Use this ID's if you use my sample inputs
 
-sample json input
+```shell
+#sample json input
 {
 "amount": 1000
 }
+```
